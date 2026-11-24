@@ -32,3 +32,18 @@ def test_meme_calcul_entrainement_et_prediction():
     prediction = build_features(pd.DataFrame([client]))
 
     pd.testing.assert_frame_equal(entrainement, prediction)
+
+def test_a_un_credit():
+    df = pd.DataFrame({
+        "age": [25, 35, 45, 65],
+        "housing": ["yes", "yes", "no", "no"],
+        "loan": ["yes", "no", "yes", "no"],
+        "pdays": [-1, -1, -1, -1],
+        "balance": [100, 200, 300, 400],
+        "campaign": [1, 1, 1, 1],
+        "previous": [0, 0, 0, 0]
+    })
+
+    features = build_features(df)
+
+    assert features["a_un_credit"].tolist() == [1, 1, 1, 0]
