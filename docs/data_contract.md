@@ -10,6 +10,7 @@
 - age entre 18 et 100 ; y vaut `yes` ou `no`
 - catégories dans la liste connue (`unknown` autorisé)
 - balance sans limite (un solde peut être négatif)
+- campaign entre 1 et 100 (nombre d'appels à un même client donc au-delà c'est une erreur de saisie)
 - Détail complet : `src/mlops_projet/data/schema.py`
 
 ## Si le contrat n'est pas respecté
