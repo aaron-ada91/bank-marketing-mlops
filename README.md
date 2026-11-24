@@ -31,7 +31,7 @@ Afin de garantir une répartition équilibrée du travail, nous avons adopté un
 |---|---|
 | Q1 — Nouvelle règle de validation | Aaron ADA |
 | Q2 — Création et vérification d'un fichier invalide | Célya BAKALA-YAME |
-| Q3 — Nouvelle feature et test unitaire | Célya BAKALA-YAME |
+| Q3 — Nouvelle feature et test unitaire | Yassine AROUS |
 
 Les développements ont été réalisés sur des branches dédiées, avec des Pull Requests et des revues de code avant leur intégration dans la branche principale `main`.
 
@@ -446,33 +446,6 @@ Le pipeline permet ainsi de produire un jeu de données validé et transformé, 
 
 ---
 
-## 11. Organisation Git et versionnement
-
-Le développement du projet repose sur une organisation collaborative utilisant des branches dédiées.
-
-| Branche | Objectif |
-|---|---|
-| `main` | Version principale du projet |
-| `chore/structure` | Initialisation de la structure |
-| `feat/load-data` | Chargement des données |
-| `feat/data-contract` | Contrat de données |
-| `feat/validate-on-load` | Module d'ingestion et validation |
-| `feat/features` | Jeu de features réutilisable |
-| `feat/my-rules` | Exercices complémentaires |
-
-Les modifications sont intégrées à la branche principale après revue de code et fusion des Pull Requests.
-
-### Versions du projet
-
-| Version | Description |
-|---|---|
-| `v0.1.0` | Socle du projet — TP1 |
-| `v0.2.0` | Module d'ingestion et jeu de features — TP2 |
-
-Les exercices complémentaires ont été intégrés à `main` après la publication de la version `v0.2.0`.
-
----
-
 ## 12. Perspectives d'amélioration
 
 Les prochaines étapes du projet pourront notamment porter sur :
@@ -483,11 +456,6 @@ Les prochaines étapes du projet pourront notamment porter sur :
 - L'automatisation des tests.
 - L'intégration continue (CI/CD).
 - Le déploiement d'un modèle de prédiction.
-
-Deux améliorations techniques ont également été identifiées :
-
-- Exclure les fichiers temporaires Python `__pycache__` du suivi Git.
-- Améliorer la présentation des erreurs de validation dans `check.py` afin de fournir un message plus synthétique.
 
 ---
 
